@@ -3,7 +3,7 @@
 import { Connection, PublicKey } from '@solana/web3.js';
 import { NextResponse } from 'next/server';
 
-export async function GET(request) {
+export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const walletAddress = searchParams.get('walletAddress');
 
